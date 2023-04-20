@@ -1,9 +1,3 @@
-/**
- * circularQ.c
- *
- * School of Computer Science, 
- * Chungbuk National University
- */
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -31,6 +25,8 @@ int main(void) {
 	element data; //입력받은 요소 저장할 변수
 
 	char command; //입력받은 명령어 저장할 변수
+
+    printf("[----- [Son Ji Yeon] [2020039104] -----]\n");
 
 	do {
 		printf("\n-----------------------------------------------------\n");
@@ -126,7 +122,7 @@ void printQ(QueueType *cQ) {
 	last = (cQ->rear + 1)%MAX_QUEUE_SIZE; //rear의 다음 위치를 last에 저장
 
 	printf("Circular Queue : [");
-    
+
 	i = first; //i에 first 대입
 	while(i != last) { //i가 last와 같지 않을 동안 반복
 		printf("%3c", cQ->queue[i]); //원형 큐의 i번째 값을 출력
